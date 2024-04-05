@@ -9,7 +9,7 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const connection = mysql.createConnection({
-  host: 'mysql-casedb',
+  host: 'mysql-casedb:3306',
   user: 'root',
   password: '12345',
   database: 'casov1'
